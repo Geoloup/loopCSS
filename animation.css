@@ -1,0 +1,77 @@
+.s025 {animation-duration: 0.25s;}.s05 {animation-duration: 0.5s;}.s075 {animation-duration: 0.75s;}.s1 {animation-duration: 1s;}.s125 {animation-duration: 1.25s;}.s15 {animation-duration: 1.5s;}.s175 {animation-duration: 1.75s;}.s225 {animation-duration: 2.25s;}.s25 {animation-duration: 2.5s;}.s275 {animation-duration: 2.75s;}.s3 {animation-duration: 3s;}.s325 {animation-duration: 3.25s;}.s35 {animation-duration: 3.5s;}.s375 {animation-duration: 3.75s;}.s4 {animation-duration: 4s;}.s425 {animation-duration: 4.25s;}.s45 {animation-duration: 4.5s;}.s475 {animation-duration: 4.75s;}.s5 {animation-duration: 5s;}.linear {animation-timing-function:linear;}.ease {animation-timing-function:ease;}.ease-in-out {animation-timing-function:ease-in-out;}.ease-out {animation-timing-function:ease-out;}.in-out {animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);}
+.t1 {animation-iteration-count: 1;}.t2 {animation-iteration-count: 2;}.t3 {animation-iteration-count: 3;}.t4 {animation-iteration-count: 4;}.t5 {animation-iteration-count: 5;}.t6 {animation-iteration-count: 6;}.t7 {animation-iteration-count: 7;}.t8 {animation-iteration-count: 8;}.t9 {animation-iteration-count: 9;}.t10 {animation-iteration-count: 10;}.tinfinite {animation-iteration-count: infinite;}
+.c1 {color:white}.c2 {color:black}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes osilate {
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(-25deg) }
+    50% { transform: rotate(0deg) }
+    75% { transform: rotate(25deg) }
+    100% { transform: rotate(0deg) }
+}
+
+@keyframes mouvement {
+    0% { transform: translate(0px, 0px) }
+    25% { transform: translate(-10px, 0px) }
+    75% { transform: translate( 10px, 0px) }
+    100% { transform: translate(0px, 0px) }
+}
+
+@keyframes grow {
+    0% { transform: scale(1) }
+    50% { transform: scale(1.5) }
+    100% { transform: scale(1) }
+}
+
+@keyframes pulse {
+  	from {
+		box-shadow: none;
+	}
+	to {
+		box-shadow: 0 0 0 15px #eee;
+  	}
+}
+
+.rotate {
+    animation-name: rotate;
+}
+.osilate {
+    animation-name: osilate;
+}
+.mouvement {
+    animation-name: mouvement;
+}
+.grow {
+    animation-name: grow;
+}
+.pulse {
+	animation-name: pulse;
+}
+.hoverrotate:hover {
+    animation-name: rotate;
+}
+.hoverosilate:hover {
+    animation-name: osilate;
+}
+.hovermouvement:hover {
+    animation-name: mouvement;
+}
+.hovergrow:hover {
+    animation-name: grow;
+}
+.hoverpulse:hover {
+    animation-name: pulse;
+}
+
+.animatedElmStyle {
+    width:fit-content;
+}

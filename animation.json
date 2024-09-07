@@ -1,0 +1,36 @@
+{
+    "animations": {
+    "↻ Rotate": {
+        "animation-class": "rotate"
+    },
+    "↷ Osilate": {
+        "animation-class": "osilate"
+    },
+    "⇿ Mouvement": {      
+        "animation-class": "mouvement"
+    },
+    "⇲ Grow": {
+        "animation-class": "grow"
+    },
+	"⯎ Pulse": {
+		"animation-class": "pulse"
+	}
+  },
+    "hover": {
+        "↻ Rotate": {
+            "animation-class": "hoverrotate"
+        },
+        "↷ Osilate": {
+            "animation-class": "hoverosilate"            
+        },
+        "⇿ Mouvement": {
+            "animation-class": "hovermouvement"            
+        },
+        "⇲ Grow": {
+            "animation-class": "hovergrow"
+        },
+		"⯎ Pulse": {
+			"animation-class": "hoverpulse"
+		}
+    }
+}

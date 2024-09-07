@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>CSS animations | Loop CSS</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src='plugin.jquery.js'></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animation.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class='box left'>
+        <div class='box left-top'>
+            <label class="">Element to animate:</label><br>
+            <textarea name="html" id="html" cols="10" rows="10" class="element"
+                placeholder="HTML here"><div>animated element</div></textarea>
+        </div>
+        <div class="box left-bottom">
+            <label class="">Preview:</label><br>
+            <div class="preview" id="preview">
+                <div>animated </div>
+            </div>
+        </div>
+    </div>
+    <div class='box right'>
+        <div class='box right-top'>
+            <br>
+            <label class="">HTML preview:</label>
+            <div>
+                <i class="copy fa-solid fa-copy" onclick="copy_html()"></i>
+            </div>
+            <code id='code' class="code" style='height: calc(15% - 20px);' >code</code>
+            <br>
+            <label class="">Full code preview:</label>
+            <div>
+                <i class="copy fa-solid fa-copy" onclick="copy_full()"></i>
+            </div>
+            <code id='fullcode' class="code">code</code>
+            <br>
+        </div>
+        <div class="box right-bottom">
+            
+            <div class='Listanimation'>
+                <label class=""><i class="fa-solid fa-list-ul"></i> <b>Animations</b></label><br>
+                <div class="custom-select">
+                    <!-- ne pas toucher a sa. Automatiquement généra par script.js-->
+                    <select id='animationselector'>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+            </div>
+            <div class='time'>
+                <label class="set"><i class="fa-solid fa-sliders"></i> <b>Settings:</b></label><br>
+                <label class=""><i class="fa-regular fa-clock"></i> Duration</label><br>
+                <input type="range" min="0.25" max="5" step="0.25" class="slider" id="timeid">
+				<span class="time-value" id='timeval'></span>
+            </div>
+            <br><br>
+            <div class='repeat'>
+                <label class=""><i class="fa-solid fa-arrows-spin"></i> Repeat</label><br>
+                <input type="range" min="1" max="11" step="1" class="slider" id="repeatid">
+				<span class="repeat-value" id='repeatval'></span>
+			</div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
